@@ -1,3 +1,12 @@
+/*
+Programação III - Avaliação 01
+Projeto escolhido: Restaurante
+
+ALUNOS:
+- Antônio Ivo da Silva Gomes
+- Dymas de Sousa Cunha
+*/
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -5,164 +14,211 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurante</title>
-  <link rel="stylesheet" href="./assets/css/bootstrap.css">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap"
-    rel="stylesheet">
+  <title>Delícias Na Panela</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="./assets/images/favicon.png">
 </head>
-<body>
-  <header class="header">
-    <div class="container">
-      <h1>
-        <a href="#" class="logo">Restaurante</a>
-      </h1>
 
-      <nav class="navbar">
-        <ul class="navbar-list">
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-danger text-white" data-bs-theme="dark">
+      <div class="container-xxl">
+        <a class="navbar-brand" href="#">Delícias Na Panela</a>
+        <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="#home" class="navbar-link">Página inicial</a>
+            <a href="#cardapio" class="nav-link">Cardápio</a>
           </li>
           <li class="nav-item">
-            <a href="#about" class="navbar-link">Sobre</a>
+            <a href="quemsomos.html" class="nav-link">Quem Somos</a>
           </li>
           <li class="nav-item">
-            <a href="#contato" class="navbar-link">Contato</a>
+            <a href="#rodape" class="nav-link">Entre em Contato</a>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container">
-        <div class="hero-content">
-          <h2 class="h1 hero-title">Valorizamos as as histórias vividas em torno da cozinha!</h2>
-          <p class="hero-text"> É na mesa que reunimos amigos e família, comemoramos o nascimento das pessoas queridas, nossas conquistas, encontros, chegadas e despedidas.</p>
-          <div class="hero-banner"><img src="./assets/images/burguer.png"></div>
+    <div class="bg-danger" data-bs-theme="dark">
+      <div class="container-xxl">
+        <div class="row align-items-center py-5">
+          <div class="col-sm-6">
+            <img src="./assets/images/burguer.png" class="d-block mx-lg-auto img-fluid" alt="" width="700" height="500">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="mb-3">Valorizamos as as histórias vividas em torno da cozinha!</h1>
+            <p class="lead text-white">É na mesa que reunimos amigos e família, comemoramos o nascimento das pessoas
+              queridas, nossas conquistas, encontros, chegadas e despedidas.</p>
+          </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="section food-menu">
-      <div class="container">
-        <h2 class="h2 section-title">
+    <section>
+      <div class="container-xxl">
+        <h2 id="cardapio" class="h2 text-center pt-5">
           Nosso cardápio
         </h2>
-        <p class="section-text">
+        <p class="text-center">
           A base de nossa cozinha está no frescor e qualidade de nossos ingredientes,
         </p>
 
-        <ul class="food-menu-list">
-          <li>
-            <div class="food-menu-card">
-              <div class="card-banner">
-                <img src="./assets/images/comida1.jpg" width="300" height="300" loading="lazy"
-                  alt="Fried Chicken Unlimited" class="w-100">
-              </div>
-              <h3 class="h3 card-title">Carbonara</h3>
-              <div class="price-wrapper">
-                <p class="price-text">Preço:</p>
-                <p class="price">R$20</p>
+        <div class="row justify-content-center mt-5">
+
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <img src="./assets/images/comida1.jpg" class="card-img-top" style="height: 230px;">
+              <div class="card-body">
+                <h5 class="card-title">Carbonara</h5>
+                <p class="card-text">Carbonara, spaghetti alla carbonara ou pasta alla Carbonara, é uma receita
+                  tradicional italiana de massa.</p>
+                <a href="#" class="btn btn-primary">R$20</a>
               </div>
             </div>
-          </li>
+          </div>
 
-          <li>
-            <div class="food-menu-card">
-              <div class="card-banner">
-                <img src="./assets/images/comida2.jpg" width="300" height="300" loading="lazy"
-                  alt="Fried Chicken Unlimited" class="w-100">
-              </div>
-
-              <h3 class="h3 card-title">Peito de frango</h3>
-              <div class="price-wrapper">
-                <p class="price-text">Preço:</p>
-                <p class="price">R$20</p>
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <img src="./assets/images/comida2.jpg" class="card-img-top" style="height: 230px;">
+              <div class="card-body">
+                <h5 class="card-title">Espaguete ao alho e óleo</h5>
+                <p class="card-text">Spaghetti aglio e olio é um prato de massa italiana tradicional de Nápoles. </p>
+                <a href="#" class="btn btn-primary">R$20</a>
               </div>
             </div>
-          </li>
+          </div>
 
-          <li>
-            <div class="food-menu-card">
-              <div class="card-banner">
-                <img src="./assets/images/comida3.jpg" width="300" height="300" loading="lazy"
-                  alt="Fried Chicken Unlimited" class="w-100">
-              </div>
-
-              <h3 class="h3 card-title">Costela</h3>
-              <div class="price-wrapper">
-                <p class="price-text">Preço:</p>
-                <p class="price">R$20</p>
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <img src="./assets/images/comida3.jpg" class="card-img-top" style="height: 230px;">
+              <div class="card-body">
+                <h5 class="card-title">Pasta al Pomodoro</h5>
+                <p class="card-text">Pasta al pomodoro é uma comida italiana tipicamente preparada com macarrão, azeite,
+                  tomate fresco, manjericão e vários outros ingredientes frescos.</p>
+                <a href="#" class="btn btn-primary">R$20</a>
               </div>
             </div>
-          </li>
-        </ul>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <img src="./assets/images/comida4.jpg" class="card-img-top" style="height: 230px;">
+              <div class="card-body">
+                <h5 class="card-title">Peito de Frango Empanado</h5>
+                <p class="card-text">Deliciosa receita de peito de frango empanado crocante.</p>
+                <a href="#" class="btn btn-primary">R$20</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <img src="./assets/images/comida5.jpg" class="card-img-top" style="height: 230px;">
+              <div class="card-body">
+                <h5 class="card-title">Camarão à provençal</h5>
+                <p class="card-text">O camarão a provençal é um clássico da cozinha mediterrânea e um dos pratos
+                  preferidos para os amantes de camarão.</p>
+                <a href="#" class="btn btn-primary">R$20</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <img src="./assets/images/comida6.jpg" class="card-img-top" style="height: 230px;">
+              <div class="card-body">
+                <h5 class="card-title">Filé de Peixe</h5>
+                <p class="card-text">Um filé de peixe, da palavra francesa filet que significa um fio ou tira, é a carne
+                  de um peixe que foi cortada ou fatiada a partir do osso.</p>
+                <a href="#" class="btn btn-primary">R$20</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <img src="./assets/images/comida1.jpg" class="card-img-top" style="height: 230px;">
+              <div class="card-body">
+                <h5 class="card-title">Carbonara</h5>
+                <p class="card-text">Carbonara, spaghetti alla carbonara ou pasta alla Carbonara, é uma receita
+                  tradicional italiana de massa.</p>
+                <a href="#" class="btn btn-primary">R$20</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="card text-center">
+              <img src="./assets/images/comida2.jpg" class="card-img-top" style="height: 230px;">
+              <div class="card-body">
+                <h5 class="card-title">Espaguete ao alho e óleo</h5>
+                <p class="card-text">Spaghetti aglio e olio é um prato de massa italiana tradicional de Nápoles. </p>
+                <a href="#" class="btn btn-primary">R$20</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="footer-brand">
-          <a href="/" class="logo">Restaurante</a>
-          <p class="footer-text">
-            É na mesa que reunimos amigos e família, comemoramos o nascimento das pessoas queridas, nossas conquistas, encontros, chegadas e despedidas.
-          </p>
+  <footer id="rodape" class="mt-5 py-5 bg-body-secondary">
+    <div class="container-xxl">
+      <div class="row">
+        <div class="col-md-3 mb-3">
+          <h5>Contato</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="tel:99999999" class="nav-link p-0 text-muted">Telefone: (86)
+                9999-9999</a></li>
+            <li class="nav-item mb-2"><a href="mailto:deliciasnapanela@Delícias Na Panela.com"
+                class="nav-link p-0 text-muted">deliciasnapanela@Delícias Na Panela.com</a></li>
+            <li class="nav-item mb-2">Av. Nossa Sra. de Fátima, Parnaíba - PI, 64202-220</li>
+          </ul>
         </div>
 
-        <ul class="footer-list">
-          <p class="footer-list-title">Contato</p>
-          <li>
-            <p class="footer-list-item">86 9 9999-9999</p>
-          </li>
-          <li>
-            <p class="footer-list-item">restaurante@restaurante.com</p>
-          </li>
-          <li>
-            <p class="footer-list-item">Av. Nossa Sra. de Fátima, Parnaíba - PI, 64202-220</p>
-          </li>
-        </ul>
+        <div class="col-md-3 mb-3">
+          <h5>Horário de funcionamento</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">Segunda a Sexta: 08h até 22h</li>
+            <li class="nav-item mb-2">Sábado e Domingo: 08h até 14h</li>
+          </ul>
+        </div>
 
-        <ul class="footer-list">
-          <li>
-            <p class="footer-list-title">Horário de funcionamento</p>
-          </li>
-          <li>
-            <p class="footer-list-item">Segunda a Sexta: 08:00-22:00</p>
-          </li>
-          <li>
-            <p class="footer-list-item">Sábado e Domingo: 08:00-20:00</p>
-          </li>
-        </ul>
+        <div class="col-md-5 mb-3">
+          <h5>Reserve uma mesa</h5>
+          <form>
+            <div class="row mb-2">
+              <div class="col-sm-6"><input type="text" placeholder="Seu Nome" class="form-control"></div>
+              <div class="col-sm-6"><input type="email" placeholder="Email" class="form-control"></div>
+            </div>
 
-        <form action="" class="footer-form">
-          <p class="footer-list-title">Reserve uma Mesa</p>
-          <div class="input-wrapper">
-            <input type="text" name="full_name" required placeholder="Seu Nome" aria-label="Seu Nome"
-              class="input-field">
-            <input type="email" name="email_address" required placeholder="Email" aria-label="Email"
-              class="input-field">
-          </div>
+            <div class="row mb-3">
+              <div class="col-sm-6">
+                <select class="form-select">
+                  <option>Uma Pessoa</option>
+                  <option>Duas Pessoas</option>
+                  <option>Três Pessoas</option>
+                  <option>Quatro Pessoas</option>
+                </select>
+              </div>
 
-          <div class="input-wrapper">
-            <select name="total_person" aria-label="Total person" class="input-field">
-              <option value="person">Uma Pessoa</option>
-              <option value="2 person">Duas Pessoas</option>
-              <option value="3 person">Três Pessoas</option>
-              <option value="4 person">Quatro Pessoas</option>
-            </select>
-            <input type="date" name="booking_date" aria-label="Reservation date" class="input-field">
-          </div>
+              <div class="col-sm-6">
+                <input type="date" class="form-control">
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Reservar</button>
+          </form>
+        </div>
+      </div>
 
-          <textarea name="message" required placeholder="Mensagem" aria-label="Mensagem" class="input-field"></textarea>
-          <button type="submit" class="btn">Reservar</button>
-        </form>
+      <div class="py-4 my-4 border-top">
+        <p>© 2022 Delícias Na Panela.</p>
       </div>
     </div>
   </footer>
 </body>
+
 </html>

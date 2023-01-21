@@ -1,0 +1,127 @@
+/*
+Programação III - Avaliação 01
+Projeto escolhido: Restaurante
+
+ALUNOS:
+- Antônio Ivo da Silva Gomes
+- Dymas de Sousa Cunha
+*/
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delícias Na Panela</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/images/favicon.png">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-danger text-white" data-bs-theme="dark">
+            <div class="container-xxl">
+                <a class="navbar-brand" href="#">Delícias Na Panela</a>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#cardapio" class="nav-link">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#rodape" class="nav-link">Entre em Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <article class="container-md py-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-8">
+                    <h2>Quem somos</h2>
+                    <p>Iniciamos no ano de 1989 em Fortaleza/CE com o Dom Pastel, primeiro restaurante fundado por
+                        Afranio e
+                        Daniela Barreira. Esta unidade foi inspiração para o crescimento da rede Delícias Na Panela, que
+                        desde então vem
+                        encantando e atraindo clientes nos mais diversos estados do Brasil.</p>
+                    <p>Considerado o maior e melhor restaurante do Brasil, com especialidade em frutos do mar, o
+                        Delícias Na Panela possui
+                        um amplo e variado cardápio, com comidas e bebidas deliciosamente diferenciadas, feitas com
+                        ingredientes
+                        frescos da mais alta qualidade. Os pratos são bem servidos e toda essa excelência é apresentada
+                        a preços
+                        acessíveis.</p>
+                    <p>Nossas unidades são amplas, possuem decoração rústica e elegante, oferecendo aos nossos clientes
+                        um ambiente
+                        sofisticado e aconchegante.</p>
+                </div>
+
+                <div class="col-sm-4">
+                    <img src="./assets/images/restaurante.png" style="max-width: 100%;">
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer id="rodape" class="mt-5 py-5 bg-body-secondary">
+        <div class="container-xxl">
+            <div class="row">
+                <div class="col-md-3 mb-3">
+                    <h5>Contato</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="tel:99999999" class="nav-link p-0 text-muted">Telefone: (86)
+                                9999-9999</a></li>
+                        <li class="nav-item mb-2"><a href="mailto:Delícias Na Panela@Delícias Na Panela.com"
+                                class="nav-link p-0 text-muted">Delícias Na Panela@Delícias Na Panela.com</a></li>
+                        <li class="nav-item mb-2">Av. Nossa Sra. de Fátima, Parnaíba - PI, 64202-220</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 mb-3">
+                    <h5>Horário de funcionamento</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">Segunda a Sexta: 08h até 22h</li>
+                        <li class="nav-item mb-2">Sábado e Domingo: 08h até 14h</li>
+                    </ul>
+                </div>
+
+                <div class="col-md-5 mb-3">
+                    <h5>Reserve uma mesa</h5>
+                    <form>
+                        <div class="row mb-2">
+                            <div class="col-sm-6"><input type="text" placeholder="Seu Nome" class="form-control"></div>
+                            <div class="col-sm-6"><input type="email" placeholder="Email" class="form-control"></div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col-sm-6">
+                                <select class="form-select">
+                                    <option>Uma Pessoa</option>
+                                    <option>Duas Pessoas</option>
+                                    <option>Três Pessoas</option>
+                                    <option>Quatro Pessoas</option>
+                                </select>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <input type="date" class="form-control">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Reservar</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="py-4 my-4 border-top">
+                <p>© 2022 Delícias Na Panela.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
